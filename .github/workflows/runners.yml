@@ -52,7 +52,7 @@ jobs:
           ghcr_password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and Push Versioned Tags
-        uses: docker/build-push-action@c5e6528d5ddefc82f682165021e05edf58044bce
+        uses: docker/build-push-action@a806b8fe1858aa27c1da44ef4b721a70460b75aa
         with:
           context: ./runner
           file: ./runner/${{ matrix.name }}.dockerfile
